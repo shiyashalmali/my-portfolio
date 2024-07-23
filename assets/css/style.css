@@ -378,7 +378,8 @@ a:hover{
 
 #hero .hero-content {
     position: relative;
-    transform: translate(31%, -18%); 
+    left: 50%;
+    transform: translate(-50%, -20%); 
 }
 
 #hero .name {
