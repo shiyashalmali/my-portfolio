@@ -366,7 +366,7 @@ a:hover{
 
 #hero {
     position: relative;
-    padding: 120px 0px 50px 0px; 
+    padding: 120px 0 50px 0; 
     min-height: 100vh;
     display: flex;
     justify-content: center; 
@@ -378,7 +378,8 @@ a:hover{
 
 #hero .hero-content {
     position: relative;
-    transform: translate(20%, -18%); 
+    margin-top: -10%;
+   
 }
 
 #hero .name {
@@ -402,7 +403,6 @@ a:hover{
     justify-content: center; 
     margin-top: 1rem;
     position: relative; 
-    
 }
 
 #hero .call-to-action button {
@@ -419,12 +419,13 @@ a:hover{
 
 @media (max-width: 576px) {
     #hero {
-        padding: 35px 0px 0px 0px;
+        padding: 35px 0 0 0;
+        min-height: auto; 
     }
 
     #hero .hero-content {
-        margin-top: 35px;
-        transform: translate(5%, -5%); 
+        margin-top: 0;
+        
     }
 
     #hero .btn-showcase {
@@ -438,11 +439,11 @@ a:hover{
 
     #hero .social-icons a {
         font-size: 25px;
-        padding: 0px 5px 0px 5px;
+        padding: 0 5px;
     }
 
     #hero .call-to-action {
-        margin-top: 0px;
+        margin-top: 0;
     }
 }
 
