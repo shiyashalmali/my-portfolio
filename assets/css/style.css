@@ -363,12 +363,12 @@ a:hover{
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-
 #hero {
     position: relative;
     padding: 120px 0 50px 0; 
     min-height: 100vh;
     display: flex;
+    flex-direction: column; /* Ensure stacking of content vertically */
     justify-content: center; 
     align-items: center; 
     text-align: center; 
@@ -378,8 +378,7 @@ a:hover{
 
 #hero .hero-content {
     position: relative;
-    margin-top: 0%;
-   
+    /* Ensure no extra margins or padding cause overlap */
 }
 
 #hero .name {
@@ -419,13 +418,12 @@ a:hover{
 
 @media (max-width: 576px) {
     #hero {
-        padding: 35px 0 0 0;
+        padding: 35px 0 20px 0; /* Adjust bottom padding */
         min-height: auto; 
     }
 
     #hero .hero-content {
-        margin-top: 0;
-        
+        margin-top: 20px; /* Add margin if necessary to separate content */
     }
 
     #hero .btn-showcase {
@@ -443,9 +441,10 @@ a:hover{
     }
 
     #hero .call-to-action {
-        margin-top: 0;
+        margin-top: 20px; /* Ensure separation for mobile view */
     }
 }
+
 
 
 
